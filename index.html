@@ -261,7 +261,7 @@
       margin: 20px 0
     }
 
-    @media(max-width:640px) {
+    @media(max-width:700px) {
       .compare-grid {
         grid-template-columns: 1fr
       }
@@ -365,6 +365,28 @@
       font-size: .7rem;
       color: var(--green);
       white-space: nowrap
+    }
+
+    /* Mobile: stack SHAP rows vertically */
+    @media(max-width:700px) {
+      .shap-row {
+        flex-wrap: wrap;
+        gap: 4px
+      }
+
+      .shap-sym {
+        flex: 0 0 100%;
+        font-size: .8rem
+      }
+
+      .shap-bg {
+        flex: 1
+      }
+
+      .shap-lbl {
+        white-space: normal;
+        font-size: .75rem
+      }
     }
 
     .rec-item {
@@ -543,8 +565,6 @@
     </ul>
     <hr />
     <p><strong>Your privacy:</strong> No personal data is collected. All responses are anonymous.</p>
-    <p style="margin-top:8px">This survey is part of a thesis at the Faculty of Computers &amp; Artificial Intelligence.
-    </p>
     <button class="btn" onclick="go(1)">Start Survey →</button>
   </div>
 
